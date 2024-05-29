@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a =5;
+    let b = a;
+    console.log(`${a}, ${b}`)
+
+    a = 10;
+    console.log(`${a}, ${b}`)
+
+
+
+    // object shortcut
+    let product = {
+      company : 'mango',
+      price : 452,
+      'item-name' : 'shirt',
+      displayPrice : function() {
+        console.log(`price of the product is ₹${this.price}`)
+      }
+    };
+    let {company} = product;
+    console.log(company);
+  </script>
+</body>
+</html>
